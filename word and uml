@@ -1,0 +1,24 @@
+CP2406 Assessment 1
+Problem Specification:
+In this task, we need plan, design and start developing a car traffic simulator. We will create 4 to 6 different classes by using java and make it together. At least one road, traffic light, and vehicle object with the Main class as the simulator is required. The program will simulate the car from position 0 to position 10. It will pass traffic lights on the way and respond according to the instructions of the lights.
+
+Problem Decomposition:
+UML diagram:
+ 
+
+Class Design:
+Main: The main of the simulator. Group all classes together for simulation.
+
+Road: To simulate every other category, you need a Road object. It can store the number ID of the road. Length and width are private so that other objects cannot change its value.
+
+Car: Stores the length and width of the vehicle and its various locations on the road. It is public because the simulator calls it repeatedly.
+
+Traffic Light: Randomly decide whether the car will stop or go when it reaches the end of the road. The traffic light is updated to red or green with a 50% chance each simulation. It is public because the simulator calls it repeatedly.
+
+Method Design:
+Road: Set the length and width of the road and track the car position.
+
+Car: Keep the car moving.
+
+Traffic Light: First randomly changes the Boolean signal value based on a percentage. Then set another random number. If the random number is less than the rate of change which is generate by Boolean, the signal will change from true to false. true for green light, false for red light
+
