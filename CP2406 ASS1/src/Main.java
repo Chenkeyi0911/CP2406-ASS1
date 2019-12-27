@@ -2,7 +2,7 @@ public class Main {
 
     public static void main(String[] args) {
         Road road_1 = new Road(0, 5, 1);
-        Road road_2 = new Road(5, 5, 1);
+        Road road_2 = new Road(5, 5, 1);  
         Car car_obj = new Car(0);
         TrafficLights traffic_lights = new TrafficLights(0.5, road_1.end_pos);
 
